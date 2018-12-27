@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>420</width>
+    <height>656</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPlainTextEdit" name="editLog">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>390</y>
+      <width>401</width>
+      <height>231</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>630</y>
+      <width>701</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>true</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(102, 102, 102);</string>
+    </property>
+    <property name="text">
+     <string>© 2018 Guangzhou Nengxin Cultural Technology Co., Ltd.</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>400</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>串口设置(Serial Port Setting)</string>
+    </property>
+    <widget class="QComboBox" name="cbxPort">
+     <property name="geometry">
+      <rect>
+       <x>123</x>
+       <y>25</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbxBaudRate">
+     <property name="geometry">
+      <rect>
+       <x>124</x>
+       <y>54</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>56</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>比特率(Baudrate)：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>17</x>
+       <y>25</y>
+       <width>71</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>串口(Port)：</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbxStopBits">
+     <property name="geometry">
+      <rect>
+       <x>314</x>
+       <y>59</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>86</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>数据位(DataBits)：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>207</x>
+       <y>61</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>停止位(StopBits)：</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbxParity">
+     <property name="geometry">
+      <rect>
+       <x>313</x>
+       <y>26</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbxDataBits">
+     <property name="geometry">
+      <rect>
+       <x>125</x>
+       <y>83</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>208</x>
+       <y>31</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>效验位(Parity)：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>90</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FlowType：</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbxFlowType">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>90</y>
+       <width>72</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>280</y>
+      <width>401</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>状态(Status)</string>
+    </property>
+    <widget class="QLabel" name="lblMqttState_2">
+     <property name="geometry">
+      <rect>
+       <x>82</x>
+       <y>45</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MQTT：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblC2TState_2">
+     <property name="geometry">
+      <rect>
+       <x>82</x>
+       <y>27</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>COM2TCP：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblC2TState">
+     <property name="geometry">
+      <rect>
+       <x>143</x>
+       <y>27</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblMqttState">
+     <property name="geometry">
+      <rect>
+       <x>143</x>
+       <y>45</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>82</x>
+       <y>71</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Socket：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblSocketState">
+     <property name="geometry">
+      <rect>
+       <x>145</x>
+       <y>72</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="HLed" name="ledCom2Tcp" native="true">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>26</y>
+       <width>31</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="HLed" name="ledMqtt" native="true">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>49</y>
+       <width>31</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="HLed" name="ledSocket" native="true">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>72</y>
+       <width>31</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>401</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>服务(Service)</string>
+    </property>
+    <widget class="QLineEdit" name="editSubscribeTopic">
+     <property name="geometry">
+      <rect>
+       <x>133</x>
+       <y>56</y>
+       <width>111</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="editClientID">
+     <property name="geometry">
+      <rect>
+       <x>132</x>
+       <y>26</y>
+       <width>111</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnStart">
+     <property name="geometry">
+      <rect>
+       <x>258</x>
+       <y>35</y>
+       <width>121</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>启动(Start)</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>16</x>
+       <y>56</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>订阅Topic：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>26</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>客户端ID：</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLineEdit" name="editPublishTopic">
+    <property name="geometry">
+     <rect>
+      <x>142</x>
+      <y>93</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>92</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>发布Topic：</string>
+    </property>
+   </widget>
+   <zorder>groupBox</zorder>
+   <zorder>editLog</zorder>
+   <zorder>label_12</zorder>
+   <zorder>groupBox_2</zorder>
+   <zorder>groupBox_3</zorder>
+   <zorder>editPublishTopic</zorder>
+   <zorder>label_9</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>HLed</class>
+   <extends>QWidget</extends>
+   <header>hled.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
